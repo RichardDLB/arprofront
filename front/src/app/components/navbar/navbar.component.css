@@ -1,0 +1,11 @@
+.navbar{
+    background-color: black;    
+}
+
+.collapse {
+    justify-content: flex-end;
+}
+
+.logoArPro {
+    width: 110px;
+}

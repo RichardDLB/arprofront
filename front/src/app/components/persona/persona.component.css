@@ -1,0 +1,14 @@
+.imgBanner{
+    width: 100%;
+    height: 650px;
+}
+
+.imgPerfil{
+    border-radius: 100%;
+}
+
+div{
+    background-color: black;
+    padding: 5px;
+    text-align: center;
+}
