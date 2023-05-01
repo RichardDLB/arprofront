@@ -1,0 +1,13 @@
+.card{
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+div{
+    background-color: black;
+}
+
+#habilidades{
+    margin-top: 0.6%;
+    color: white;
+}
