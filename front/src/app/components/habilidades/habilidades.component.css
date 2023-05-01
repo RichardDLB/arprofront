@@ -1,6 +1,8 @@
 .card{
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: space-between;
+    color: white;
 }
 
 div{
@@ -10,4 +12,5 @@ div{
 #habilidades{
     margin-top: 0.6%;
     color: white;
+    width: 25;
 }
