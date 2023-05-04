@@ -26,7 +26,9 @@
                     </li>
 
                 </ul>
-                <button type="button" class="btn btn-light" (click)="login()">Login</button>
+                <button type="button" class="btn btn-light" (click)="login()" *ngIf="!isLogged" >Login</button>
+                <button type="button" class="btn btn-light" (click)="onLogOut()" *ngIf="isLogged" >LogOut</button>
+
             </form>
         </div>
     </div>

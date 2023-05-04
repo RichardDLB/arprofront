@@ -1,14 +1,14 @@
 export class Persona {
     id?:number;
-    nombre:String;
-    apellido:String;
-    profesion:String;
-    imgBanner:String;
-    imgPerfil:String;
-    email:String;
-    texPre:String;
+    nombre:string;
+    apellido:string;
+    profesion:string;
+    imgBanner:string;
+    imgPerfil:string;
+    email:string;
+    texPre:string;
 
-    constructor(nombre:String, apellido:String, profesion:String, imgBanner:String, imgPerfil:String, email:String, texPre:String){
+    constructor(nombre:string, apellido:string, profesion:string, imgBanner:string, imgPerfil:string, email:string, texPre:string){
         this.nombre=nombre;
         this.apellido=apellido;
         this.profesion=profesion;
