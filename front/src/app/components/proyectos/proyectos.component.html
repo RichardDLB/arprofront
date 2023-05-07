@@ -30,17 +30,17 @@
       </div>
 
     </div>
+    <div>
+      <td class="p-2" *ngIf="isLogged">
+        <button class="btn btn-primary" routerLink="/editpro/{{Proyecto.id}}">
+          <i class="fa-solid fa-pencil"></i></button>
+      </td>
+      <td *ngIf="isLogged">
+        <button class="btn btn-danger" (click)="delete(Proyecto.id)">
+          <i class="fa-regular fa-trash-can"></i></button>
+      </td>
+    </div>
 
-    <td *ngIf="isLogged">
-      <button class="btn btn-light" routerLink="/editpro/{{Proyecto.id}}">
-        <i class="bi bi-pencil-fill"></i> EDITAR</button>
-    </td>
-    <td *ngIf="isLogged">
-      <button class="btn btn-danger" (click)="delete(Proyecto.id)">
-        <i class="bi bi-trash-fill"></i> BORRAR</button>
-    </td>
-
-  </div>  
+  </div>
 
 </div>
-
