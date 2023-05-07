@@ -1,15 +1,46 @@
-<div class="card " id="proyectos" >
+<div id="proyectos">
+
   <h1 class="p-3">Proyectos</h1>
-  <h3 class="p-3">Descripcion</h3>
-    <div class="row g-0 p-3">
-      <div class="col-md-4">
-        <img src="../../../assets/img/imgPerfil.jpg" class="img-fluid rounded-start p-2" alt="...">
-      </div>
-      <div class="col-md-4">
-        <img src="../../../assets/img/imgPerfil.jpg" class="img-fluid rounded-start p-2" alt="...">
-      </div>
-      <div class="col-md-4">
-        <img src="../../../assets/img/imgPerfil.jpg" class="img-fluid rounded-start p-2" alt="...">
-      </div>      
+
+  <button type="button" class="btn btn-dark" routerLink="/nuevapro" *ngIf="isLogged">
+    +
+  </button>
+
+  <div *ngFor="let Proyecto of proyec" class="card ">
+
+    <h1 class="p-3">{{Proyecto.nombre}}</h1>
+
+    <h3 class="p-3">{{Proyecto.descripcion}}</h3>
+
+    <div class="col-lg-2">
     </div>
-  </div>
+
+    <div class="row g-0 p-3">
+
+      <div class="col-md-4">
+        <img src="../../../assets/img/imgPerfil.jpg" class="img-fluid rounded-start p-2" alt="...">
+      </div>
+
+      <div class="col-md-4">
+        <img src="../../../assets/img/imgPerfil.jpg" class="img-fluid rounded-start p-2" alt="...">
+      </div>
+
+      <div class="col-md-4">
+        <img src="../../../assets/img/imgPerfil.jpg" class="img-fluid rounded-start p-2" alt="...">
+      </div>
+
+    </div>
+
+    <td *ngIf="isLogged">
+      <button class="btn btn-light" routerLink="/editpro/{{Proyecto.id}}">
+        <i class="bi bi-pencil-fill"></i> EDITAR</button>
+    </td>
+    <td *ngIf="isLogged">
+      <button class="btn btn-danger" (click)="delete(Proyecto.id)">
+        <i class="bi bi-trash-fill"></i> BORRAR</button>
+    </td>
+
+  </div>  
+
+</div>
+
