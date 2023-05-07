@@ -10,6 +10,7 @@ import { NewHabilidadComponent } from './components/habilidades/new-habilidad.co
 import { EditHabilidadComponent } from './components/habilidades/edit-habilidad.component';
 import { NewProyectosComponent } from './components/proyectos/new-proyectos.component';
 import { EditProyectosComponent } from './components/proyectos/edit-proyectos.component';
+import { EditPersonaComponent } from './components/persona/edit-persona.component';
 
 const routes: Routes = [
   {path:'', component: IndexComponent},
@@ -22,6 +23,8 @@ const routes: Routes = [
   { path: 'edithabi/:id', component: EditHabilidadComponent},
   { path: 'nuevapro', component: NewProyectosComponent},
   { path: 'editpro/:id', component: EditProyectosComponent},
+  { path: 'editper/:id', component: EditPersonaComponent},
+
 
 
 

@@ -1,0 +1,39 @@
+<div class="container" *ngIf="per">
+    <div class="row">
+        <div>
+            <form (ngSubmit)="onUpdate()" novalidate #f="ngForm">
+                <div class="form-group">
+                    <label for="nombre">Nombre </label>
+                    <input type="text" class="form-control" id="nombre" name="nombre" [(ngModel)]="per.nombre" required>
+                </div>
+                <div class="form-group">
+                    <label for="apellido">Apellido</label>
+                    <input type="text" class="form-control" id="apellido" name="apellido" [(ngModel)]="per.apellido" required>
+                </div>
+                <div class="form-group">
+                    <label for="profesion">Profesion</label>
+                    <input type="text" class="form-control" id="profesion" name="profesion" [(ngModel)]="per.profesion" required>
+                </div>
+                <div class="form-group">
+                    <label for="imgBanner">ImgBanner</label>
+                    <input type="text" class="form-control" id="imgBanner" name="imgBanner" [(ngModel)]="per.imgBanner" required>
+                </div>
+                <div class="form-group">
+                    <label for="imgPerfil">ImgPerfil</label>
+                    <input type="text" class="form-control" id="imgPerfil" name="imgPerfil" [(ngModel)]="per.imgPerfil" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="text" class="form-control" id="email" name="email" [(ngModel)]="per.email" required>
+                </div>
+                <div class="form-group">
+                    <label for="texPre">Texto Presentación</label>
+                    <input type="text" class="form-control" id="texPre" name="texPre" [(ngModel)]="per.texPre" required>
+                </div>
+                <button class="btn btn-primary">
+                    Actualizar
+                </button>
+            </form>
+        </div>
+    </div>
+</div>

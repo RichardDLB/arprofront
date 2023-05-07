@@ -1,24 +1,30 @@
 <div *ngFor="let Persona of per">
     <div class="card" id="persona">
-    <!-- imagen banner -->
-    <img src="../../../assets/img/banner.jpg">
+        <!-- imagen banner -->
+        <img src="../../../assets/img/banner.jpg">
 
-    <div class="card-img-overlay text-black">
-        <p class="textBanner1">{{Persona.nombre}} {{Persona.apellido}} </p>
-        <p class="textBanner2">{{Persona.profesion}}</p>
-    </div>
-</div>
-
-<div class="row">
-    <div class="col-lg-4 text-center conImgPer text-white ">
-        <img src="../../../assets/img/imgPerfil.jpg" class="rounded-circle imgPerfil">
-        <h5 class="p-3">{{Persona.email}}</h5>
+        <div class="card-img-overlay text-black">
+            <p class="textBanner1">{{Persona.nombre}} {{Persona.apellido}} </p>
+            <p class="textBanner2">{{Persona.profesion}}</p>
+        </div>
     </div>
 
-    <div class="col-lg-8 textPre text-center text-white">
-        <span>
-            {{Persona.texPre}}
-        </span>
+    <div class="row">
+        <div class="col-lg-4 text-center conImgPer text-white ">
+            <img src="../../../assets/img/imgPerfil.jpg" class="rounded-circle imgPerfil">
+            <h5 class="p-3">{{Persona.email}}</h5>
+        </div>
+
+        <div class="col-lg-8 textPre text-center text-white">
+            <span>
+                {{Persona.texPre}}
+            </span>
+        </div>
     </div>
-</div>
+    <div class="btnEditPer card-img-overlay ">
+        <td *ngIf="isLogged">
+            <button class="btn btn-light" routerLink="/editper/{{Persona.id}}">
+                <i class="bi bi-pencil-fill"></i> EDITAR</button>
+        </td>
+    </div>
 </div>

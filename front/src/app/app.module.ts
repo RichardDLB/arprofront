@@ -23,6 +23,7 @@ import { NewHabilidadComponent } from './components/habilidades/new-habilidad.co
 import { EditHabilidadComponent } from './components/habilidades/edit-habilidad.component';
 import { NewProyectosComponent } from './components/proyectos/new-proyectos.component';
 import { EditProyectosComponent } from './components/proyectos/edit-proyectos.component';
+import { EditPersonaComponent } from './components/persona/edit-persona.component';
 
 @NgModule({
   declarations: [
@@ -44,6 +45,7 @@ import { EditProyectosComponent } from './components/proyectos/edit-proyectos.co
     EditHabilidadComponent,
     NewProyectosComponent,
     EditProyectosComponent,
+    EditPersonaComponent,
   ],
   imports: [
     BrowserModule,
