@@ -40,4 +40,6 @@
     flex-wrap: wrap;
     flex-direction: row-reverse;
     align-items: flex-end;
+    z-index: 1;
+
 }

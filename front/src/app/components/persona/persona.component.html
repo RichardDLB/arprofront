@@ -1,7 +1,7 @@
 <div *ngFor="let Persona of per">
     <div class="card" id="persona">
         <!-- imagen banner -->
-        <img src="../../../assets/img/banner.jpg">
+        <img src="{{Persona.imgBanner}}">
 
         <div class="card-img-overlay text-black">
             <p class="textBanner1">{{Persona.nombre}} {{Persona.apellido}} </p>
@@ -11,7 +11,7 @@
 
     <div class="row">
         <div class="col-lg-4 text-center conImgPer text-white ">
-            <img src="../../../assets/img/imgPerfil.jpg" class="rounded-circle imgPerfil">
+            <img src="{{Persona.imgPerfil}}" class="rounded-circle imgPerfil">
             <h5 class="p-3">{{Persona.email}}</h5>
         </div>
 
