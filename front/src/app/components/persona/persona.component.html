@@ -1,24 +1,24 @@
-<div class="card">
+<div *ngFor="let Persona of per">
+    <div class="card" id="persona">
     <!-- imagen banner -->
     <img src="../../../assets/img/banner.jpg">
 
     <div class="card-img-overlay text-black">
-        <p class="textBanner1">{{persona.nombre}} {{persona.apellido}} </p>
-        <p class="textBanner2">Desarrollador Web Full Stack</p>
+        <p class="textBanner1">{{Persona.nombre}} {{Persona.apellido}} </p>
+        <p class="textBanner2">{{Persona.profesion}}</p>
     </div>
 </div>
 
 <div class="row">
     <div class="col-lg-4 text-center conImgPer text-white ">
         <img src="../../../assets/img/imgPerfil.jpg" class="rounded-circle imgPerfil">
-        <h5 class="p-3">richardlopezbo.ar@gmail.com</h5>
+        <h5 class="p-3">{{Persona.email}}</h5>
     </div>
 
     <div class="col-lg-8 textPre text-center text-white">
         <span>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. A molestias sint, tempore, nostrum magnam
-            voluptatem ipsam debitis, facilis alias explicabo rerum dolorem voluptatibus aliquam odit blanditiis
-            illum aliquid id soluta!
+            {{Persona.texPre}}
         </span>
     </div>
+</div>
 </div>

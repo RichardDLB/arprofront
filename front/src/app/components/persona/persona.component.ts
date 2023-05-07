@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { Persona } from 'src/app/model/persona';
+import { Mpersona } from 'src/app/model/mpersona';
 import { SPersonaService } from 'src/app/service/persona';
+import { TokenService } from 'src/app/service/token.service';
 
 @Component({
   selector: 'app-persona',
@@ -9,12 +10,36 @@ import { SPersonaService } from 'src/app/service/persona';
 })
 export class PersonaComponent implements OnInit{
 
-  persona:Persona=new Persona("", "", "", "", "", "", "");
+  per: Mpersona[]=[];
 
-  constructor(public servicePersona:SPersonaService){}
+  constructor(private spersona: SPersonaService, private tokenService: TokenService) { }
+
+  isLogged = false;
+
 
   ngOnInit(): void {
-    this.servicePersona.getPersona().subscribe(data => {this.persona = data})
+    this.cargarPersona();
+    if (this.tokenService.getToken()) {
+      this.isLogged = true;
+    } else {
+      this.isLogged = false;
+    }
+  }
+
+  cargarPersona(): void {
+    this.spersona.lista().subscribe(data => { this.per = data; })
+  }
+
+  delete(id?: number){
+    if(id != undefined){
+      this.spersona.delete(id).subscribe(
+        data => {
+          this.cargarPersona();
+        }, err => {
+          alert("No se pudo borrar la persona");
+        }
+      )
+    }
   }
 
 
