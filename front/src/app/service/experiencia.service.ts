@@ -9,7 +9,7 @@ import { Experiencia } from '../model/experiencia';
 })
 export class ExperienciaService {
 
-  URL= 'http://localhost:8080/explab/';
+  URL= 'https://argproback.onrender.com/explab/';
 
 
   constructor(private httpClient: HttpClient) { }

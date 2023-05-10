@@ -8,7 +8,7 @@ import { Observable } from 'rxjs';
 })
 export class EducacionService {
 
-  URL= 'http://localhost:8080/edu/';
+  URL= 'https://argproback.onrender.com/edu/';
 
 
   constructor(private httpClient: HttpClient) { }

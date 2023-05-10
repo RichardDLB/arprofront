@@ -8,7 +8,7 @@ import { Observable } from 'rxjs';
 })
 export class SproyectosService {
 
-  URL = 'http://localhost:8080/proyecto/';
+  URL = 'https://argproback.onrender.com/proyecto/';
 
   constructor(private httpClient: HttpClient) { }
 
