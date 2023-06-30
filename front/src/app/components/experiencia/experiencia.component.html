@@ -12,15 +12,15 @@
           <tbody>
               <tr *ngFor="let Experiencia of expe">
                   <td>
-                      <h2 class="text-white">{{Experiencia.nombreE}}</h2>
+                      <h2 class="text-white">{{Experiencia.nombreExperiencia}}</h2>
                   </td>
-                  <td class="text-white">{{Experiencia.descripcionE}}</td>
+                  <td class="text-white">{{Experiencia.descripcionExperiencia}}</td>
                   <td *ngIf="isLogged">
-                      <button class="btn btn-primary"routerLink="/editexp/{{Experiencia.id}}">
+                      <button class="btn btn-primary"routerLink="/editexp/{{Experiencia.idExperiencia}}">
                         <i class="fa-solid fa-pencil"></i></button>
                   </td>
                   <td *ngIf="isLogged">
-                      <button class="btn btn-danger" (click)="delete(Experiencia.id)">
+                      <button class="btn btn-danger" (click)="delete(Experiencia.idExperiencia)">
                         <i class="fa-regular fa-trash-can"></i></button>
                   </td>
               </tr>

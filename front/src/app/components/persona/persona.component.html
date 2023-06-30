@@ -1,31 +1,31 @@
 <div *ngFor="let Persona of per">
     <div class="card" id="persona">
         <!-- imagen banner -->
-        <img src="{{Persona.imgBanner}}">
+        <img src="{{Persona.imgBannerPersona}}">
 
         <div class="card-img-overlay text-black">
-            <p class="textBanner1">{{Persona.nombre}} {{Persona.apellido}} </p>
-            <p class="textBanner2">{{Persona.profesion}}</p>
+            <p class="textBanner1">{{Persona.nombrePersona}} {{Persona.apellidoPersona}} </p>
+            <p class="textBanner2">{{Persona.profesionPersona}}</p>
         </div>
     </div>
 
     <div class="row">
         <div class="col-lg-4 text-center conImgPer text-white ">
-            <img src="{{Persona.imgPerfil}}" class="rounded-circle imgPerfil">
-            <h5 class="p-3">{{Persona.email}}</h5>
+            <img src="{{Persona.imgPerfilPersona}}" class="rounded-circle imgPerfil">
+            <h5 class="p-3">{{Persona.emailPersona}}</h5>
         </div>
 
         <div class="col-lg-8 textPre text-center text-white">
             <span>
-                {{Persona.texPre}}
+                {{Persona.texPrePersona}}
             </span>
         </div>
         <div class="btnEditPer">
             <td *ngIf="isLogged">
-                <button class="btn btn-light"routerLink="/editper/{{Persona.id}}">
+                <button class="btn btn-light" routerLink="/editper/{{Persona.idPersona}}">
                     <i class="fa-solid fa-pencil"></i></button>
             </td>
         </div>
     </div>
-    
+
 </div>

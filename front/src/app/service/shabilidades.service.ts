@@ -8,7 +8,7 @@ import { Observable } from 'rxjs';
 })
 export class ShabilidadesService {
 
-  URL = 'https://argproback.onrender.com/habilidad/';
+  URL = 'https://bdback.onrender.com/habilidad/';
 
   constructor(private httpClient: HttpClient) { }
 

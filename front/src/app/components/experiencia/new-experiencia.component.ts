@@ -9,8 +9,8 @@ import { ExperienciaService } from "src/app/service/experiencia.service";
   styleUrls: ['./new-experiencia.component.css']
 })
 export class NewExperienciaComponent implements OnInit {
-  nombreE: string = '';
-  descripcionE: string = '';
+  nombreExperiencia: string = '';
+  descripcionExperiencia: string = '';
 
   constructor(private sExperiencia: ExperienciaService, private router: Router) { }
 
@@ -18,7 +18,7 @@ export class NewExperienciaComponent implements OnInit {
   }
 
   onCreate(): void {
-    const expe = new Experiencia(this.nombreE, this.descripcionE);
+    const expe = new Experiencia(this.nombreExperiencia, this.descripcionExperiencia);
     this.sExperiencia.save(expe).subscribe(
       data => {
         alert("Experiencia añadida");

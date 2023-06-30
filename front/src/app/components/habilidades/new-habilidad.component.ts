@@ -10,8 +10,8 @@ import { ShabilidadesService } from 'src/app/service/shabilidades.service';
 })
 export class NewHabilidadComponent implements OnInit {
 
-  nombre!:string;
-  porcentaje!:number;
+  nombreHabilidad!:string;
+  porcentajeHabilidad!:number;
 
   constructor(private shabilidades:ShabilidadesService, private router: Router) { }
 
@@ -20,7 +20,7 @@ export class NewHabilidadComponent implements OnInit {
   }
 
   onCreate(): void {
-    const habi = new Mhabilidades(this.nombre, this.porcentaje);
+    const habi = new Mhabilidades(this.nombreHabilidad, this.porcentajeHabilidad);
     this.shabilidades.save(habi).subscribe(
       data => {
         alert("Habilidad Agregada");

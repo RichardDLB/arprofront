@@ -7,7 +7,7 @@ import { Mpersona } from '../model/mpersona';
   providedIn: 'root'
 })
 export class SPersonaService {
-  URL = 'https://argproback.onrender.com/persona/';
+  URL = 'https://bdback.onrender.com/persona/';
 
   constructor(private httpClient: HttpClient) { }
 

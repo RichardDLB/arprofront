@@ -8,9 +8,9 @@
 
   <div *ngFor="let Proyecto of proyec" class="card ">
 
-    <h1 class="p-3 text-white">{{Proyecto.nombre}}</h1>
+    <h1 class="p-3 text-white">{{Proyecto.nombreProyecto}}</h1>
 
-    <h3 class="p-3 text-white">{{Proyecto.descripcion}}</h3>
+    <h3 class="p-3 text-white">{{Proyecto.descripcionProyecto}}</h3>
 
     <div class="col-lg-2">
     </div>
@@ -18,25 +18,25 @@
     <div class="row g-0 p-3">
 
       <div class="col-md-4">
-        <img src="{{Proyecto.img1}}" class="img-fluid rounded-start p-2" alt="...">
+        <img src="{{Proyecto.img1Proyecto}}" class="img-fluid rounded-start p-2" alt="...">
       </div>
 
       <div class="col-md-4">
-        <img src="{{Proyecto.img2}}" class="img-fluid rounded-start p-2" alt="...">
+        <img src="{{Proyecto.img2Proyecto}}" class="img-fluid rounded-start p-2" alt="...">
       </div>
 
       <div class="col-md-4">
-        <img src={{Proyecto.img3}} class="img-fluid rounded-start p-2" alt="...">
+        <img src={{Proyecto.img3Proyecto}} class="img-fluid rounded-start p-2" alt="...">
       </div>
 
     </div>
     <div>
       <td class="p-2" *ngIf="isLogged">
-        <button class="btn btn-primary" routerLink="/editpro/{{Proyecto.id}}">
+        <button class="btn btn-primary" routerLink="/editpro/{{Proyecto.idProyecto}}">
           <i class="fa-solid fa-pencil"></i></button>
       </td>
       <td *ngIf="isLogged">
-        <button class="btn btn-danger" (click)="delete(Proyecto.id)">
+        <button class="btn btn-danger" (click)="delete(Proyecto.idProyecto)">
           <i class="fa-regular fa-trash-can"></i></button>
       </td>
     </div>

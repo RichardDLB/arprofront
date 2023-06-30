@@ -1,20 +1,20 @@
 export class Mpersona {
-    id?:number;
-    nombre:string;
-    apellido:string;
-    profesion:string;
-    imgBanner:string;
-    imgPerfil:string;
-    email:string;
-    texPre:string;
+    idPersona?:number;
+    nombrePersona:string;
+    apellidoPersona:string;
+    profesionPersona:string;
+    imgBannerPersona:string;
+    imgPerfilPersona:string;
+    emailPersona:string;
+    texPrePersona:string;
 
-    constructor(nombre:string, apellido:string, profesion:string, imgBanner:string, imgPerfil:string, email:string, texPre:string){
-        this.nombre=nombre;
-        this.apellido=apellido;
-        this.profesion=profesion;
-        this.imgBanner=imgBanner;
-        this.imgPerfil=imgPerfil;
-        this.email=email;
-        this.texPre=texPre;
+    constructor(nombrePersona:string, apellidoPersona:string, profesionPersona:string, imgBannerPersona:string, imgPerfilPersona:string, emailPersona:string, texPrePersona:string){
+        this.nombrePersona=nombrePersona;
+        this.apellidoPersona=apellidoPersona;
+        this.profesionPersona=profesionPersona;
+        this.imgBannerPersona=imgBannerPersona;
+        this.imgPerfilPersona=imgPerfilPersona;
+        this.emailPersona=emailPersona;
+        this.texPrePersona=texPrePersona;
     }
 }

@@ -8,7 +8,7 @@ import { Observable } from 'rxjs';
 })
 export class EducacionService {
 
-  URL= 'https://argproback.onrender.com/edu/';
+  URL= 'https://bdback.onrender.com/educacion/';
 
 
   constructor(private httpClient: HttpClient) { }

@@ -1,17 +1,17 @@
 export class Mproyectos {
 
-    id?: number;
-    nombre: string;
-    descripcion: string;
-    img1: string;
-    img2: string;
-    img3: string;
+    idProyecto?: number;
+    nombreProyecto: string;
+    descripcionProyecto: string;
+    img1Proyecto: string;
+    img2Proyecto: string;
+    img3Proyecto: string;
 
-    constructor(nombre: string, descripcion: string, img1: string, img2: string, img3: string,) {
-        this.nombre = nombre;
-        this.descripcion = descripcion;
-        this.img1 = img1;
-        this.img2 = img2;
-        this.img3 = img3;
+    constructor(nombreProyecto: string, descripcionProyecto: string, img1Proyecto: string, img2Proyecto: string, img3Proyecto: string,) {
+        this.nombreProyecto = nombreProyecto;
+        this.descripcionProyecto = descripcionProyecto;
+        this.img1Proyecto = img1Proyecto;
+        this.img2Proyecto = img2Proyecto;
+        this.img3Proyecto = img3Proyecto;
     }
 }

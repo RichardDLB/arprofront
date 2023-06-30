@@ -10,7 +10,7 @@ import { JwtDto } from '../model/jwt-dto';
 })
 export class AuthService {
 
-  authURL = 'https://argproback.onrender.com/auth/';
+  authURL = 'https://bdback.onrender.com/auth/';
 
   constructor(private httpClient: HttpClient) { }
 

@@ -13,18 +13,18 @@
 
         <div *ngFor="let Habilidad of habili" class="row g-0 p-3">
             <div class="col-md-4 ">
-                <h4>{{Habilidad.nombre}}</h4>
+                <h4>{{Habilidad.nombreHabilidad}}</h4>
                 <div class="card-body">
-                    <circle-progress [percent]="(Habilidad.porcentaje)" [radius]="100" [outerStrokeWidth]="16" [innerStrokeWidth]="8"
+                    <circle-progress [percent]="(Habilidad.porcentajeHabilidad)" [radius]="100" [outerStrokeWidth]="16" [innerStrokeWidth]="8"
                         [outerStrokeColor]="'#78C000'" [innerStrokeColor]="'#C7E596'" [animation]="true"
                         [animationDuration]="300"></circle-progress>
                 </div>
                 <td class="p-2" *ngIf="isLogged">
-                    <button class="btn btn-primary"routerLink="/edithabi/{{Habilidad.id}}">
+                    <button class="btn btn-primary"routerLink="/edithabi/{{Habilidad.idHabilidad}}">
                         <i class="fa-solid fa-pencil"></i></button>
                 </td>
                 <td *ngIf="isLogged">
-                    <button class="btn btn-danger" (click)="delete(Habilidad.id)">
+                    <button class="btn btn-danger" (click)="delete(Habilidad.idHabilidad)">
                         <i class="fa-regular fa-trash-can"></i></button>
                 </td>
             </div>
